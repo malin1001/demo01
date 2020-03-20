@@ -17,3 +17,16 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
+#oss
+web: 
+   file: #forum-userimage.oss-cn-beijing.aliyuncs.com
+   #不同的服务器，地址不同 http://
+      endpoint: oss-cn-beijing.aliyuncs.com 
+      #去OSS控制台获取
+      keyid: LTAI4FcZ2KgJPswhYdJ8mKPd 
+      #去OSS控制台获取
+      keysecret: I74ek6jtQbYATb0YkAuWbHhkhOx9Mw 
+      #这个自己创建bucket时的命名，控制台创建也行，代码创建也行
+      bucketname: forum-userimage 
+      #文件路径，我这里是blog
+      filehost: articleImages

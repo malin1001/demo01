@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.unit.DataSize;
 
+import com.malin.demo.config1.ConstantProperties;
+
 @SpringBootApplication
 
 @Configuration
@@ -16,6 +18,9 @@ public class SpringWebApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringWebApplication.class, args);
+	
+	ConstantProperties properties =new ConstantProperties();
+	//properties.st();
 	}
 
 	/**
